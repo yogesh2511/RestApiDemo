@@ -22,4 +22,28 @@ public class CommonUtilFunctions {
 		String key_value= jsonPath.get(response_key);
 		return key_value;
 	}
+	
+	public static int getStatusCode(Response response) 
+	{
+		int status_code= response.getStatusCode();
+		return status_code;
+	}
+	
+	public static String getStatusMessage(Response response) 
+	{
+		String status_message= response.getStatusLine();
+		return status_message;
+	}
+	
+	public static String getResponseHeader(Response response, String header_key) 
+	{
+		String response_header= response.getHeader(header_key);
+		return response_header;
+	}
+	
+	public static String getResponseContentType(Response response) 
+	{
+		String content_type= response.getContentType();
+		return content_type;
+	}
 }
