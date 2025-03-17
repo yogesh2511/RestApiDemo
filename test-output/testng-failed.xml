@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basic.testcase.VerifyResponseGetABoardTest">
+      <class name="basic.testcase.Board.VerifyResponseGetABoardTest">
         <methods>
-          <include name="verifyResponseBody"/>
+          <include name="getASingleBoardID"/>
         </methods>
-      </class> <!-- basic.testcase.VerifyResponseGetABoardTest -->
+      </class> <!-- basic.testcase.Board.VerifyResponseGetABoardTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

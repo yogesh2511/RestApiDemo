@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-17T14:03:55 IST" name="Default suite" finished-at="2025-03-17T14:03:59 IST" duration-ms="3887">
+  <suite started-at="2025-03-17T16:19:56 IST" name="Default suite" finished-at="2025-03-17T16:19:59 IST" duration-ms="2860">
     <groups>
     </groups>
-    <test started-at="2025-03-17T14:03:55 IST" name="Default test" finished-at="2025-03-17T14:03:59 IST" duration-ms="3887">
-      <class name="basic.testcase.VerifyResponseGetABoardTest">
-        <test-method signature="verifyResponseBody()[pri:0, instance:basic.testcase.VerifyResponseGetABoardTest@130d63be]" started-at="2025-03-17T14:03:55 IST" name="verifyResponseBody" finished-at="2025-03-17T14:03:59 IST" duration-ms="3856" status="PASS">
+    <test started-at="2025-03-17T16:19:56 IST" name="Default test" finished-at="2025-03-17T16:19:59 IST" duration-ms="2860">
+      <class name="basic.testcase.Members.GetAllBoardIDs">
+        <test-method signature="getListsonaBoard()[pri:0, instance:basic.testcase.Members.GetAllBoardIDs@130d63be]" started-at="2025-03-17T16:19:56 IST" name="getListsonaBoard" finished-at="2025-03-17T16:19:59 IST" duration-ms="2829" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyResponseBody -->
-      </class> <!-- basic.testcase.VerifyResponseGetABoardTest -->
+        </test-method> <!-- getListsonaBoard -->
+      </class> <!-- basic.testcase.Members.GetAllBoardIDs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

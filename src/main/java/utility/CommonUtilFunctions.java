@@ -3,7 +3,7 @@ package utility;
 import java.util.List;
 import java.util.Map;
 
-import basic.testcase.VerifyResponseGetABoardTest;
+import basic.testcase.Board.VerifyResponseGetABoardTest;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 

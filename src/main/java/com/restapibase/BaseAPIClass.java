@@ -30,6 +30,7 @@ public class BaseAPIClass {
 		return response;
 	}
 	
+	
 	public static Response postRequest(String requestURI, String requestPayLoad) {
 		RestLogger.info(BaseAPIClass.class,"Request URI is:"+ requestURI);
 		RestLogger.info(BaseAPIClass.class,"Request Payload is:"+ requestPayLoad);
