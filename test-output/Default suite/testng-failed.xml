@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basic.testcase.Board.VerifyResponseGetABoardTest">
+      <class name="basic.testcase.Cards.CreateANewCard">
         <methods>
-          <include name="getASingleBoardID"/>
+          <include name="deleteACard"/>
         </methods>
-      </class> <!-- basic.testcase.Board.VerifyResponseGetABoardTest -->
+      </class> <!-- basic.testcase.Cards.CreateANewCard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

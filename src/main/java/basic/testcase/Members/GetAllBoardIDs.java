@@ -17,7 +17,7 @@ public class GetAllBoardIDs {
 	@Test
 	public void getListsonaBoard() {
 		String MemberID = "678cbc268c0cb1b94182fbea";
-		String endPoint = ConfigReader.getEndpoint("endpoint.GetAllTheMembers");
+		String endPoint = ConfigReader.getEndpoint("endpoint.CreateNewCard");
 		String finalUrl = endPoint.replace("{MemberID}", MemberID);
 
 		String Id = "678cbcbd64731b38472cccd6";
