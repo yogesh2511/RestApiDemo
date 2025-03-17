@@ -11,16 +11,16 @@ public class SampleLogGenerator {
 		{
 
 		 // Logging informational messages
-        RestLogger.info( "This is an INFO level log message.");
+        RestLogger.info(SampleLogGenerator.class,"This is an INFO level log message.");
 
         // Logging warning messages
-        RestLogger.warn("This is a WARN level log message.");
+        RestLogger.warn(SampleLogGenerator.class,"This is a WARN level log message.");
 
         // Logging error messages
-        RestLogger.error("This is an ERROR level log message.");
+        RestLogger.error(SampleLogGenerator.class,"This is an ERROR level log message.");
 
         // Logging fatal messages
-        RestLogger.fatal("This is a FATAL level log message.");
+        RestLogger.fatal(SampleLogGenerator.class,"This is a FATAL level log message.");
 		
 	}
 	

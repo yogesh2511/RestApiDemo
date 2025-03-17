@@ -2,6 +2,7 @@ package basic.testcase;
 
 import static org.testng.Assert.assertEquals;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.restapibase.BaseAPIClass;
@@ -21,28 +22,13 @@ public class VerifyResponseGetABoardTest {
 		String endPoint = ConfigReader.getEndpoint("endpoint.GetCardsinaList");
 		String token = Authorization.token;
 		String key = Authorization.key;
-		RestLogger.info("Starting Create Repo Test");
+		RestLogger.info(VerifyResponseGetABoardTest.class,"Starting Create Repo Test");
 		response = BaseAPIClass.getRequest(endPoint, token, key);
-		String resopnseString = response.getBody().asString();
+		RestLogger.info(VerifyResponseGetABoardTest.class,"Id:"+CommonUtilFunctions.getJsonValueInString(response, "[0].id"));		
+		RestLogger.info(VerifyResponseGetABoardTest.class,"Votes:"+CommonUtilFunctions.getJsonValueInString(response, "[0].badges.votes"));
+		Assert.assertEquals(CommonUtilFunctions.getJsonValueInString(response, "[0].id"), "67c9a1f2fdd92ede14e69442");
+		Assert.assertEquals(CommonUtilFunctions.getJsonValueInString(response, "[0].badges.votes"), "0");
 		
-		JsonPath responsebody = new JsonPath(resopnseString);
-		RestLogger.info("Response String:"+resopnseString);
-		
-		RestLogger.info("Id:"+CommonUtilFunctions.stringToJsonConverter(resopnseString, "[0].id"));
-//		assertEquals("67c2f2a09a585e78f447e7b3", responsebody.get("[0].id"));
-//		String badges=CommonUtilFunctions.stringToJsonConverterAsString(response, "[0].badges");
-
-//		String votes=CommonUtilFunctions.stringToJsonConverter(resopnseString, "[0].badges.votes");
-//		RestLogger.info("Votes:"+votes);
-		
-		System.out.println("Votes:"+responsebody.get("[0].badges.votes"));
-		
-		 String votes= responsebody.get("[0].badges.votes").toString(); int vote =
-		 Integer.parseInt(votes); assertEquals(0, vote);
-		 System.out.println("badges:"+responsebody.get("badges"));
-		 
-		System.out.println("===================================================");
-		System.out.println(CommonUtilFunctions.stringToJsonConverter(resopnseString, "[0].id"));
 		
 	}
 }
